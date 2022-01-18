@@ -58,7 +58,7 @@ public:
 			cout << b[i] << endl;
 		}
 		a.swap(b);
-		cout << "After Swapping: " << endl;
+		cout << "\nAfter Swapping: " << endl;
 		cout << " a   b" << endl;
 		for (int i = 0; i < 5; i++) {
 			cout << a[i] << "  ";

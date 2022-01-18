@@ -80,6 +80,20 @@ public:
 		vec.emplace(vec.begin() + 1, 15);
 		vec.emplace(vec.end(), 45);
 		debug(vec);
+
+
+		// insert
+		vector<int> vtr = { 10, 20, 30, 40 };
+		vtr.insert(vtr.begin() + 2, 25);
+		vtr.insert(vtr.end(), 50);
+		debug(vtr);
+		vtr.insert(vtr.begin() + 2, {21, 22, 23, 24});	//Insert 21,22,23,24 before index 2
+		debug(vtr);
+		vtr.insert(vtr.begin() + 2, 4, -1);	// Insert-1, 4 times before index 2
+		debug(vtr);
+		vector<int> new_vtr; debug(new_vtr);
+		new_vtr.insert(new_vtr.begin(), vtr.begin(), vtr.end()); // copy
+		debug(new_vtr);
 	}
 
 	void solve2() {
@@ -114,15 +128,17 @@ public:
 			}
 			cout << endl;
 		}
-		for (int i = 0; i < vec2D.size(); i++) {
-			for (int j = 0; j < vec2D[i].size(); j++) {
+		cout << endl;
+		for (int i = 0; i < (int)vec2D.size(); i++) {
+			for (int j = 0; j < (int)vec2D[i].size(); j++) {
 				cout << vec2D[i][j] << " ";
 			}
 			cout << endl;
 		}
+		cout << endl;
 
-		// 10x20
-		vector<vector<int>> VEC2D(10, vector<int>(20, 1));
+		// 4x5
+		vector<vector<int>> VEC2D(4, vector<int>(5, 1));
 		for (auto vtr : VEC2D) {
 			for (auto it : vtr) {
 				cout << it << " ";
