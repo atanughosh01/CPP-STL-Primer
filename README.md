@@ -1,11 +1,11 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
 
-<br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/atanughosh01/CPP-STL-Primer/blob/main/LICENSE)
 
 # CPP-STL-Primer
  A repository containing implementations of different Containers, Iterators, inbuilt Algorithms, Functors and a lot others from the Standard-Template-Library of C++ Language.
 
-
+<br>
 
 ## Contents
 * [Basics](./Basics)
@@ -58,5 +58,6 @@ Fig : Flowchart of Adaptive Containers and Unordered Containers
 <br>
 <br>
 
-### If you like and appreciate this repo, just leave a **☆**
 
+* ### Fork this repository and send a Pull Request if you want to cntribute.
+* ### Leave a **☆** if you find this repository helpful.

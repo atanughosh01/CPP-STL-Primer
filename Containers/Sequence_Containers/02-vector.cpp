@@ -4,6 +4,7 @@ typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
 
+// Debug Module
 #ifndef ONLINE_JUDGE
 #define debug(x) cerr << #x << " : "; _print(x); cerr << endl;
 #endif
@@ -23,6 +24,7 @@ template<class T> void _print(vector<T> v) {
 	cerr << "]";
 }
 
+// Actual code starts from here
 class Solution {
 public:
 	void solve1() {
@@ -147,23 +149,21 @@ public:
 	}
 };
 
+
+// Driver code
 int main() {
 #ifndef ONLINE_JUDGE
 	freopen("input1.txt", "r", stdin);
 	freopen("output1.txt", "w", stdout);
 	freopen("error.txt", "w", stderr);
 #endif
-	int T = 1;
-	// cin >> T;
-	while (T--) {
-		Solution obj;
-		obj.solve1();
-		cout << "\n-----------------\n\n";
-		cerr << "\n-----------------\n\n";
-		obj.solve2();
-		cout << "\n-----------------\n\n";
-		cerr << "\n-----------------\n\n";
-		obj.solve3();
-	}
+	Solution obj;
+	obj.solve1();
+	cout << "\n-----------------\n\n";
+	cerr << "\n-----------------\n\n";
+	obj.solve2();
+	cout << "\n-----------------\n\n";
+	cerr << "\n-----------------\n\n";
+	obj.solve3();
 	return 0;
 }
