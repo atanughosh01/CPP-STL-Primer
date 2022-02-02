@@ -15,7 +15,19 @@ void _print(char t) {cerr << t;}
 void _print(ld t) {cerr << t;}
 void _print(double t) {cerr << t;}
 void _print(ull t) {cerr << t;}
-template<class T> void _print(set<T> v) {
+
+template<class T>
+void _print(set<T> v) {
+	cerr << "[ ";
+	for (T i : v) {
+		_print(i);
+		cerr << " ";
+	}
+	cerr << "]";
+}
+
+template<class T>
+void _print(set<T, greater<T>> v) {
 	cerr << "[ ";
 	for (T i : v) {
 		_print(i);
@@ -28,8 +40,18 @@ template<class T> void _print(set<T> v) {
 class Solution {
 public:
 	void solve() {
-		int n; cin >> n;
-		cout << n << "\n";
+		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7};
+		set<int> st1;
+		set<int, greater<int>> st2;
+		cerr << "arr : [ ";
+		for (auto e : arr) {
+			cerr << e << " ";
+			st1.insert(e);
+			st2.insert(e);
+		}
+		cerr << "]\n";
+		debug(st1);
+		debug(st2);
 	}
 };
 
@@ -40,7 +62,7 @@ int main() {
 	freopen("error.txt", "w", stderr);
 #endif
 	int T = 1;
-	cin >> T;
+	// cin >> T;
 	while (T--) {
 		Solution obj;
 		obj.solve();
