@@ -13,9 +13,9 @@ public:
 
 int main() {
 #ifndef ONLINE_JUDGE
-	freopen("input1.txt", "r", stdin);
-	freopen("output1.txt", "w", stdout);
-	freopen("error.txt", "w", stderr);
+	freopen("zin.txt", "r", stdin);
+	freopen("zout.txt", "w", stdout);
+	freopen("zerr.txt", "w", stderr);
 #endif
 	int T = 1;
 	cin >> T;
