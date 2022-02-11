@@ -18,22 +18,22 @@ void _print(ull t) {cerr << t;}
 
 template<class T>
 void _print(set<T> v) {
-	cerr << "[ ";
+	cerr << "{ ";
 	for (T i : v) {
 		_print(i);
 		cerr << " ";
 	}
-	cerr << "]";
+	cerr << "}";
 }
 
 template<class T>
 void _print(set<T, greater<T>> v) {
-	cerr << "[ ";
+	cerr << "{ ";
 	for (T i : v) {
 		_print(i);
 		cerr << " ";
 	}
-	cerr << "]";
+	cerr << "}";
 }
 
 
@@ -43,15 +43,36 @@ public:
 		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7};
 		set<int> st1;
 		set<int, greater<int>> st2;
+
+		// Insert elements
 		cerr << "arr : [ ";
 		for (auto e : arr) {
 			cerr << e << " ";
-			st1.insert(e);
+			st1.insert(e);	// O(log(n)) time, n = size of set
 			st2.insert(e);
 		}
 		cerr << "]\n";
-		debug(st1);
 		debug(st2);
+		debug(st1);
+
+		// Erase elements
+		st1.erase(st1.begin()); // st.erase(iterator)
+		debug(st1);
+		st1.erase(st1.find(5)); // st.erase(iterator)
+		debug(st1);
+		st1.erase(6); // st.erase(value)
+		debug(st1);
+		st1.erase(st1.begin(), st1.find(7)); // st.erase(startItr, endItr)
+		debug(st1);
+
+		// Copy
+		set<int> st3(st2.begin(), st2.end());
+		set<int, greater<int>> st4 = st2;
+		debug(st3); debug(st4);
+		auto it = st3.find(6);
+		debug(*it);
+		auto itr = st3.find(9);
+		debug(*itr);
 	}
 };
 
