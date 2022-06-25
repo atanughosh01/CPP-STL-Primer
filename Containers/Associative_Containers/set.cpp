@@ -36,7 +36,6 @@ void _print(set<T, greater<T>> v) {
 	cerr << "}";
 }
 
-
 class Solution {
 public:
 	void solve() {
@@ -54,6 +53,8 @@ public:
 		cerr << "]\n";
 		debug(st2);
 		debug(st1);
+		int len = st1.size();
+		debug(len);
 
 		// Erase elements
 		st1.erase(st1.begin()); // st.erase(iterator)
