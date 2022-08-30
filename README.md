@@ -39,7 +39,7 @@
 * [STL-Algorithms](./Algorithms)
 
 
-<div align="center">
+<!-- <div align="center">
 
 <br>
 <br>
@@ -61,3 +61,4 @@ Fig : Flowchart of Adaptive Containers and Unordered Containers
 
 * ### Fork this repository and send a Pull Request if you want to cntribute.
 * ### Leave a **☆** if you find this repository helpful.
+ -->
