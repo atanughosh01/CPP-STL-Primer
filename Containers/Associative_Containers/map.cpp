@@ -24,13 +24,22 @@ template<class T, class V> void _print(map<T, V> v) {
 	cerr << "]";
 }
 
-
+// template<class T, class V> void _print(map<T, V> v) {
+// 	cerr << "[ ";
+// 	for (auto i : v) {
+// 		_print(i);
+// 		cerr << " ";
+// 	}
+// 	cerr << "]";
+// }
 
 class Solution {
 public:
 	void solve() {
-		int n; cin >> n;
-		cout << n << "\n";
+		// int n; cin >> n;
+		// cout << n << "\n";
+		auto x = 1ull << 63;
+		cout << x << "\n";
 	}
 };
 
@@ -41,7 +50,7 @@ int main() {
 	freopen("zerr.txt", "w", stderr);
 #endif
 	int T = 1;
-	cin >> T;
+	// cin >> T;
 	while (T--) {
 		Solution obj;
 		obj.solve();
