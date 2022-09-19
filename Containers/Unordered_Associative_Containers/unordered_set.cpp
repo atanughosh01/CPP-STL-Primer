@@ -39,14 +39,14 @@ void _print(unordered_set<T, greater<T>> v) {
 class Solution {
 public:
 	void solve() {
-		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7};
+		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7, 7, 8};
 		unordered_set<int> st1;
 
 		// Insert elements
 		cerr << "arr : [ ";
 		for (auto e : arr) {
 			cerr << e << " ";
-			st1.insert(e);	// O(log(n)) time, n = size of unordered_set
+			st1.insert(e);	// O(1) time
 		}
 		cerr << "]\n";
 		debug(st1);
@@ -79,7 +79,7 @@ int main() {
 	freopen("zerr.txt", "w", stderr);
 #endif
 	int T = 1;
-	cin >> T;
+	// cin >> T;
 	while (T--) {
 		Solution obj;
 		obj.solve();

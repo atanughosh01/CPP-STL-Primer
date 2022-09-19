@@ -66,7 +66,7 @@ public:
 		st1.erase(st1.begin(), st1.find(7)); // st.erase(startItr, endItr)
 		debug(st1);
 
-		// Copy
+		// Copy & find
 		set<int> st3(st2.begin(), st2.end());
 		set<int, greater<int>> st4 = st2;
 		debug(st3); debug(st4);
