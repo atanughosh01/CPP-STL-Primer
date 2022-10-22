@@ -15,31 +15,22 @@ void _print(char t) {cerr << t;}
 void _print(ld t) {cerr << t;}
 void _print(double t) {cerr << t;}
 void _print(ull t) {cerr << t;}
-template<class T, class V> void _print(map<T, V> v) {
+template<class T, class V> void _print(map<T, V> m) {
 	cerr << "[ ";
-	for (auto i : v) {
-		_print(i);
+	for (auto &[k, v] : m) {
+		cerr << "{" << k << ":" << v << "}";
 		cerr << " ";
 	}
 	cerr << "]";
 }
 
-// template<class T, class V> void _print(map<T, V> v) {
-// 	cerr << "[ ";
-// 	for (auto i : v) {
-// 		_print(i);
-// 		cerr << " ";
-// 	}
-// 	cerr << "]";
-// }
-
 class Solution {
 public:
 	void solve() {
-		// int n; cin >> n;
-		// cout << n << "\n";
-		auto x = 1ull << 63;
-		cout << x << "\n";
+		map<int, int> m1;
+		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7, 7, 8};
+		for (auto e : arr) m1[e]++;
+		debug(m1);
 	}
 };
 
