@@ -15,10 +15,16 @@ void _print(char t) {cerr << t;}
 void _print(ld t) {cerr << t;}
 void _print(double t) {cerr << t;}
 void _print(ull t) {cerr << t;}
-template<class T, class V> void _print(map<T, V> v) {
+template<class T, class V> void _print(map<T, V> m) {
 	cerr << "[ ";
+<<<<<<< HEAD
 	for (auto &[k, v] : v) {
 		cerr << "{" << k << ":" << v << "}" << " ";
+=======
+	for (auto &[k, v] : m) {
+		cerr << "{" << k << ":" << v << "}";
+		cerr << " ";
+>>>>>>> e755636bf0e19616e07fba669564c8129b38c8ca
 	}
 	cerr << "]";
 }
@@ -28,7 +34,11 @@ public:
 	void solve() {
 		map<int, int> m1;
 		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7, 7, 8};
+<<<<<<< HEAD
 		for (auto &e : arr) m1[e]++;
+=======
+		for (auto e : arr) m1[e]++;
+>>>>>>> e755636bf0e19616e07fba669564c8129b38c8ca
 		debug(m1);
 	}
 };
