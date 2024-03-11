@@ -17,9 +17,14 @@ void _print(double t) {cerr << t;}
 void _print(ull t) {cerr << t;}
 template<class T, class V> void _print(map<T, V> m) {
 	cerr << "[ ";
+
+	for (auto &[k, v] : v) {
+		cerr << "{" << k << ":" << v << "}" << " ";
+
 	for (auto &[k, v] : m) {
 		cerr << "{" << k << ":" << v << "}";
 		cerr << " ";
+
 	}
 	cerr << "]";
 }
@@ -29,7 +34,11 @@ public:
 	void solve() {
 		map<int, int> m1;
 		int arr[] = {2, 5, 2, 1, 5, 5, 2, 2, 1, 6, 6, 7, 7, 8};
+
+		for (auto &e : arr) m1[e]++;
+
 		for (auto e : arr) m1[e]++;
+
 		debug(m1);
 	}
 };
