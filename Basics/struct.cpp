@@ -49,8 +49,8 @@ class Solution {
 
 int main() {
 #ifndef ONLINE_JUDGE
-    freopen("input1.txt", "r", stdin);
-    freopen("output1.txt", "w", stdout);
+    freopen("zin.txt", "r", stdin);
+    freopen("zout.txt", "w", stdout);
 #endif
     int T = 1;
     // cin >> T;
