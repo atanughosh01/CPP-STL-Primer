@@ -14,7 +14,7 @@ for more efficient insertion and deletion at both ends.
 
 class Solution {
    private:
-#define printList(x)    \
+#define printDq(x)      \
     cout << #x << ": "; \
     _print(x);          \
     cout << endl;
@@ -33,7 +33,7 @@ class Solution {
     void solve() {
         // Initializing a deque
         deque<int> dq = {1, 3, 2, 8, 9};
-        printList(dq);
+        printDq(dq);
 
         // Inserting elements
         dq.push_back(500);
@@ -43,25 +43,25 @@ class Solution {
         auto itr = dq.begin();
         advance(itr, 3);
         dq.insert(itr, 100);
-        printList(dq);
+        printDq(dq);
 
         // Sorting the deque
         sort(dq.begin(), dq.end());
-        printList(dq);
+        printDq(dq);
         sort(dq.begin(), dq.end(), greater<int>());  // Sort in descending order
-        printList(dq);
+        printDq(dq);
 
         // Deleting elements
         dq.pop_back();                         // Remove last element
         dq.pop_front();                        // Remove first element
         dq.erase(dq.begin(), dq.begin() + 2);  // Remove first two elements
-        printList(dq);
+        printDq(dq);
 
         // Deleting an element at a specific position
         itr = dq.begin();
         advance(itr, 2);
         dq.erase(itr);  // Remove element at index=2 (position 3)
-        printList(dq);
+        printDq(dq);
 
         // Accessing elements in a deque
         cout << "First element: " << dq.front() << endl;  // First element
@@ -74,10 +74,10 @@ class Solution {
         // finding an element in the deque
         cout << "Size of the deque = " << dq.size() << endl;
         dq.resize(10);
-        printList(dq);
+        printDq(dq);
         cout << "Size of the deque = " << dq.size() << endl;
         dq.resize(15, 50);
-        printList(dq);
+        printDq(dq);
         cout << "Size of the deque = " << dq.size() << endl;
         cout << *find(dq.begin(), dq.end(), 50) << endl;
         cout << *find(dq.begin(), dq.end(), 2000) << endl;
@@ -85,47 +85,47 @@ class Solution {
         // Different Ways to Copy a Deque
         deque<int> oldDeque = {1, 2, 3, 4, 5};
         deque<int> newDeque(oldDeque.size());
-        printList(newDeque);
-        printList(oldDeque);
+        printDq(newDeque);
+        printDq(oldDeque);
         // Copying Deque Using copy algorithm
         copy(oldDeque.begin(), oldDeque.end(), newDeque.begin());
-        printList(newDeque);
-        printList(oldDeque);
+        printDq(newDeque);
+        printDq(oldDeque);
 
         deque<int> dq1(dq.begin(), dq.end());  // copy constructor
-        printList(dq1);
+        printDq(dq1);
         deque<int> dq2(dq);  // copy assignment operator
-        printList(dq2);
+        printDq(dq2);
         deque<int> dq3;
         dq3.assign(dq.begin(), dq.end());  // assign function
-        printList(dq3);
+        printDq(dq3);
         dq3.assign(dq.rbegin(), dq.rend());  // reverse assign function
-        printList(dq3);
+        printDq(dq3);
 
         // Swap Two Deque
         deque<int> dq4 = {1, 2, 3, 4, 5};
         deque<int> dq5 = {6, 7, 8, 9, 10};
-        printList(dq4);
-        printList(dq5);
+        printDq(dq4);
+        printDq(dq5);
         dq4.swap(dq5);  // Swap the contents of dq4 and dq5
-        printList(dq4);
-        printList(dq5);
+        printDq(dq4);
+        printDq(dq5);
         // Swap Two Deque Using swap algorithm
         swap(dq4, dq5);  // Swap the contents of dq4 and dq5
-        printList(dq4);
-        printList(dq5);
+        printDq(dq4);
+        printDq(dq5);
 
         // Sort the Deque
         sort(dq.begin(), dq.end());  // ascending
-        printList(dq);
+        printDq(dq);
         sort(dq.begin(), dq.end(), greater<int>());  // descending
-        printList(dq);
+        printDq(dq);
         // Sort the deque in ascending order using a custom comparator
         sort(dq.begin(), dq.end(), [](int a, int b) { return a < b; });
-        printList(dq);
+        printDq(dq);
         // Sort the deque in descending order using a custom comparator
         sort(dq.begin(), dq.end(), [](int a, int b) { return a > b; });
-        printList(dq);
+        printDq(dq);
 
         // Sum of All Elements Deque
         int sum = accumulate(dq.begin(), dq.end(), 0);
@@ -146,7 +146,7 @@ class Solution {
         // Reverse a Deque
         dq = {111, 222, 333, 444, 555};
         reverse(dq.begin(), dq.end());
-        printList(dq);
+        printDq(dq);
 
         // clear the deque
         dq.clear();
@@ -155,11 +155,11 @@ class Solution {
 
         // Resizing a deque
         dq.resize(5, 100);  // Resize to 5 elements, fill with 100
-        printList(dq);
+        printDq(dq);
         dq.resize(3);  // Resize to 3 elements
-        printList(dq);
+        printDq(dq);
         dq.resize(7, 200);  // Resize to 7 elements, fill with 200
-        printList(dq);
+        printDq(dq);
     }
 };
 
