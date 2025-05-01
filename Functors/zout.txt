@@ -1,1 +1,47 @@
-1
+111 + 222 = 333
+
+Before sorting: v : [ 4 2 -5 3 111 -15 34 0 2 871 1 -210 3 ]
+After sorting: v : [ 0 1 2 2 3 3 4 -5 -15 34 111 -210 871 ]
+
+Before incrementing: arr1 = [1 2 3 4 5 ]
+After incrementing: arr1 = [11 12 13 14 15 ]
+
+Before incrementing: arr2 = [11 -2 331 40 5 ]
+After incrementing: arr2 = [111 98 431 140 105 ]
+
+plus(10, 20) = 30
+minus(20, 10) = 10
+multiplies(10, 20) = 200
+divides(20, 10) = 2
+modulus(20, 10) = 0
+negate(10) = -10
+negate(-10) = 10
+
+equal_to(10, 20) = 0
+equal_to(10, 10) = 1
+not_equal_to(10, 20) = 1
+not_equal_to(10, 10) = 0
+greater(20, 10) = 1
+greater(10, 20) = 0
+greater(10, 10) = 0
+greater_equal(20, 10) = 1
+greater_equal(10, 20) = 0
+less(10, 20) = 1
+less(20, 10) = 0
+less(10, 10) = 0
+less_equal(10, 20) = 1
+less_equal(20, 10) = 0
+
+logical_and(true, false) = 0
+logical_and(true, true) = 1
+logical_and(false, false) = 0
+logical_or(true, false) = 1
+logical_or(true, true) = 1
+logical_or(false, false) = 0
+logical_not(true) = 0
+logical_not(false) = 1
+
+bit_and(10, 20) = 0
+bit_and(10, 10) = 10
+bit_or(10, 20) = 30
+bit_xor(10, 20) = 30
