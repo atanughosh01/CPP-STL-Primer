@@ -1,23 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-namespace temp {
-double val = 50.75;
-double getVal(double val) { return 2 * val; }
-}  // namespace temp
+union Data {
+    int i;
+    float f;
+    char c;
+};
 
 class Solution {
    public:
-    double getVal(double val) { return 2 * val; }
-
     void solve() {
-        double val = 10.50;
-        cout << val << endl;
-        cout << temp::val << endl;
-        cout << getVal(val) << endl;
-        cout << getVal(temp::val) << endl;
-        cout << temp::getVal(val) << endl;
-        cout << temp::getVal(temp::val) << endl;
+        Data d;
+
+        d.i = 42;
+        cout << "d.i = " << d.i << endl;
+
+        d.f = 3.14;
+        cout << "d.f = " << d.f << endl;
+
+        d.c = 'A';
+        cout << "d.c = " << d.c << endl;
+
+        // Accessing previous values is unsafe:
+        cout << "d.i = " << d.i << " (corrupted due to c)" << endl;
     }
 };
 

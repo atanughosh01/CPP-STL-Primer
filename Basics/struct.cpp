@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-typedef long long ll;
-typedef long double ld;
 
 struct Node1 {
     string str;
@@ -51,14 +49,19 @@ int main() {
 #ifndef ONLINE_JUDGE
     freopen("zin.txt", "r", stdin);
     freopen("zout.txt", "w", stdout);
+    freopen("zerr.txt", "w", stderr);
 #endif
+    ios_base::sync_with_stdio(NULL);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    Solution sol;
     int T = 1;
     // cin >> T;
     while (T--) {
-        Solution obj;
-        obj.solve1();
+        sol.solve1();
         cout << endl;
-        obj.solve2();
+        sol.solve2();
     }
+    cerr << "Time taken: " << (float)clock() / CLOCKS_PER_SEC << " secs\n";
     return 0;
 }

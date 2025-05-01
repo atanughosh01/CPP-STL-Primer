@@ -5,6 +5,7 @@
 *.slo
 *.lo
 *.o
+*.ob
 *.obj
 
 # Precompiled Headers
