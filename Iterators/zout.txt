@@ -1,1 +1,7 @@
-1
+Original vector: 1 2 3 4 5 
+Element found: 3
+Copied vector: 1 2 3 4 5 
+Moved vector: 1 2 3 4 5 
+Replaced vector: 1 2 10 4 5 
+Reversed copied vector: 5 4 10 2 1 
+Shuffled vector: 4 2 1 5 10 
