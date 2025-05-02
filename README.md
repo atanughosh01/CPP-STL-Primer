@@ -38,4 +38,4 @@ A repository containing implementations of different Containers, Iterators, inbu
 - [Functors](./Functors/functor.cpp)
 - [Iterators](./Iterators/iterator.cpp)
 - [Utility-Libraries](./UtilityLibrary/ulibrary.cpp)
-- [STL-Algorithms](./Algorithms)
+- [STL-Algorithms](./Algorithms/STLAlgo.cpp)
