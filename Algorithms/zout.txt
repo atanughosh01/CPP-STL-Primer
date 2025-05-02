@@ -1,1 +1,54 @@
-1
+Manipulative Algorithms
+v : [ 1 2 3 4 5 ]
+v2 : [ 0 0 0 0 0 ]
+Copy: v2 : [ 1 2 3 4 5 ]
+Fill: v2 : [ 0 0 0 0 0 ]
+Transform: v2 : [ 2 4 6 8 10 ]
+Replace: v : [ 1 2 0 4 5 ]
+Swap: v : [ 2 1 0 4 5 ]
+Reverse: v : [ 5 4 0 1 2 ]
+Rotate: v : [ 0 1 2 5 4 ]
+Remove: v : [ 1 2 5 4 4 ]
+Unique: v : [ 1 2 5 4 4 ]
+After Erase: v : [ 1 2 5 4 ]
+Before Partition: v : [ 1 2 5 4 6 3 1 2 4 ]
+Partition: v : [ 1 2 2 1 6 3 4 5 4 ]
+Sort: v : [ 1 1 2 2 3 4 4 5 6 ]
+Before Stable Sort: v : [ 1 1 6 2 2 5 3 4 4 ]
+Stable Sort: v : [ 1 1 2 2 5 6 3 4 4 ]
+Before Nth Element: v3 : [ 3 2 10 45 33 56 23 47 ]
+After Nth Element (N=5): v3 : [ 3 2 10 23 33 56 45 47 ]
+Before Nth Element: v4 : [ 3 2 10 45 33 56 23 47 ]
+After Nth Element (N=6): v4 : [ 33 2 10 23 3 45 47 56 ]
+Next Permutation: 
+v5 : [ 1 2 3 ]
+v5 : [ 1 3 2 ]
+v5 : [ 2 1 3 ]
+v5 : [ 2 3 1 ]
+v5 : [ 3 1 2 ]
+v5 : [ 3 2 1 ]
+Prev Permutation: 
+v5 : [ 3 2 1 ]
+v5 : [ 3 1 2 ]
+v5 : [ 2 3 1 ]
+v5 : [ 2 1 3 ]
+v5 : [ 1 3 2 ]
+v5 : [ 1 2 3 ]
+
+Non-Manipulative Algorithms
+Max Element: 5
+Min Element: 1
+Sum: 15
+Count: 1
+Find: 3
+Is Permutation: 1
+Is Sorted: 1
+Partial Sum: ps : [ 1 3 6 10 15 ]
+Adjacent Difference: ad : [ 1 1 1 1 1 ]
+Search: 1
+Search N: 0
+Find If: 4
+Find If Not: 1
+Equal: 1
+Lexicographical Compare: 0
+Includes: 1
